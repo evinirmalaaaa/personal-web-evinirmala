@@ -1,0 +1,170 @@
+/* ==========================================
+              Global Styling
+=========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212; /* Dark background */
+    color: white;
+}
+
+/* ==========================================
+              Home Section Styling
+=========================================== */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10%;
+    height: 100vh;
+}
+
+.home-content {
+    max-width: 500px;
+}
+
+.home-content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #7456FF;
+}
+
+.home-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+/* ==========================================
+              Buttons Styling
+=========================================== */
+.home-content .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #7456FF;
+    color: #121212;
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.home-content .btn.secondary {
+    background-color: transparent;
+    color: #7456FF;
+    border: 2px solid #7456FF;
+}
+
+.home-content .btn.secondary:hover {
+    background-color: #7456FF;
+    color: #121212;
+}
+
+/* ==========================================
+              Footer Styling
+=========================================== */
+.footer {
+    background-color: #7456FF; /* Ubah warna latar belakang footer menjadi ungu */
+    padding: 20px 10%; /* Memberikan padding di kiri dan kanan */
+    text-align: center; /* Teks berada di tengah */
+    position: relative;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: column; /* Mengatur teks dan ikon dalam kolom */
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media-heading {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 2rem; /* Ukuran ikon */
+    color: white;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #121212; /* Warna saat hover menjadi hitam */
+}
+
+
+
+/* ==========================================
+              Navbar Styling
+=========================================== */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 5%;
+    background: #121212; /* Dark background for navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header .logo {
+    font-size: 2rem;
+    color: #7456FF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #7456FF;
+}
+
+/* ==========================================
+              Responsive Design
+=========================================== */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+        padding: 80px 5%;
+    }
+
+    .home-content {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .home-img {
+        width: 80%;
+        height: 300px;
+    }
+}
